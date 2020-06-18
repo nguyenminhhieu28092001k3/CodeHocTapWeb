@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3_ Thuộc tính html, text, css</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Thuộc thính CSS : Giống style.Thuộc Tính = ".." bến js
+            $('div').css('color','blue');
+
+            // thuộc tính HTML : Giống innerHTMl
+            console.log('HTML : ',  $('div').html());
+
+            //thuộc tính Text  : Giống Innertext
+            console.log('Text : ',  $('div').text());
+
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1>hello</h1>
+    </div>
+
+</body>
+</html>

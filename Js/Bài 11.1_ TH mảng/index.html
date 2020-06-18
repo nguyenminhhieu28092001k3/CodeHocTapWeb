@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TH Mảng</title>
+    <script src="./main.js"></script>
+    <style>
+        span{
+            display: block;
+            margin: 20px 0 ;
+            /* visibility: hidden; */
+        }
+        li{
+            display: flex;
+        }
+        b{
+            width: 30px;
+        }
+        #munberSP{
+            width: 30px;
+        }
+        #XN{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body onload="Out_product();">
+    <span>1,2/ Biến mảng thành Chuỗi, <b>:String, Join</b> : VD: Xuất các Món ăn </span>
+    <button onclick="XuatMonAn();">Xuất MÓn Ăn</button>
+    <span id="Bai1"></span>
+
+
+    
+    <span>3,4/ Thêm và xóa mảng ở cuối mảng : <b>pop, Push</b> : VD Xóa món ăn khi khách hủy món</span>
+    <span>5,6/ Thêm và xóa mảng đầu mảng:    <b> Shift, Unshift </b>: VD Xóa món ăn khi khách hủy món</span>
+    <span>7/ Thêm và xóa mảng bất kì chỗ nào:  <b>SpLice</b> : VD Xóa món ăn khi khách hủy món</span>
+    
+    Thêm Sp: <input id="SP" type="text"> 
+    Vị Trí: <input id="munberSP" type="text">
+    <input onclick="Add_Product()" id="XN" type="button" value="Thêm">
+    <input onclick="del_Product()" id="del" type="button" value="Xóa">
+
+    
+    <div  id="list">
+
+    </div>
+
+     
+
+</body>
+</html>

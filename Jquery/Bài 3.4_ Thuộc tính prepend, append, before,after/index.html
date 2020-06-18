@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3.4_ Thuộc tính prepend, append, before,after</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Thêm vào vào đầu thẻ 
+            $('div').prepend('<b>123</b>'); 
+
+            //thêm vào sau thẻ 
+            $('div').append('<i>456</i>');
+            
+            $('div').after('hi ');
+            $('div').before('hi');
+
+
+            //THÊM nội dung của các thẻ khác 
+            $('div').append($("span"));
+
+        }); 
+    </script>
+</head>
+<body >
+
+
+
+    <div>HELLO</div>
+    <span>word</span>
+    
+    <!-- 
+        Cho các thẻ HTML sau: <b>Hello</b> 
+        Kết quả hiển thị ra trang web: 
+        Hello jQuery cung cấp 4 phương thức sau để thêm (add) và xóa (remove)
+         nội dung của 1 thẻ HTML: 
+          Phương thức prepend() (snippet: jqPrepend) sẽ thêm nội dung vào đầu thẻ HTML:
+          $("b").prepend("Oh! ");  Kết quả: Oh! Hello
+
+          Phương thức append() (snippet: jqAppend) 
+         sẽ thêm nội dung vào cuối thẻ HTML: $("b").append(" World"); 
+          Kết quả: Hello World  Phương thức before() (snippet: jqBefore) 
+         sẽ thêm nội dung vào trước thẻ HTML: $("b").before("Oh! "); 
+          Kết quả: Oh! Hello  Phương thức after() (snippet: jqAfter) sẽ thêm nội dung
+          vào sau thẻ HTML: $("b").after(" World");  Kết quả: Hello World Cả 4 phương 
+          thức trên đều có thể nhận vào tham số chứa cả mã nguồn HTML, và có thể nhận vào
+           nhiều tham số cùng lúc, ví dụ: $("b").append(" World", " <i>War</i> Z"); 
+            Kết quả: Hello World War Z 
+
+        
+
+
+     -->
+</body>
+</html>

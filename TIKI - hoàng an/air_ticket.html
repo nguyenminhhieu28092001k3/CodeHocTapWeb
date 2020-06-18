@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- font chữ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <!-- hình  -->
+    <link rel="stylesheet" href="./essets/fonts/fontawesome-free-5.13.0-web/css/all.min.css">
+    <!-- boostrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+    <!-- File để Trình duyệt IE thực hiện Responsive ( Nhận biết dc kích thước màn hình  cho dưới IE9) -->
+    <!-- Để coment lại đoạn  .js đó, khi sài Trình duyệt thường -->
+
+    <!--[if lte IE 6]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+
+    <!-- Link jquery -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <link rel="short icon" href="#">
+    <title>Tiki</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Piedra&display=swap');
+    </style>
+    <link rel="stylesheet" href="./essets/css/air_base.css">
+    <link rel="stylesheet" href="./essets/css/air_main.css">
+    <link rel="stylesheet" href="./essets/css/Grid_air.css">
+    <script src="./essets/js/air.js"></script>
+    
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+        </header>
+        <div id="Main_Star" class="container__full container-sm">
+            <div class="container__ready">
+                <div class="container__ready-text">
+                    <div id="star" class="container__ready-text-title">Start Now!</div>
+                    <span>Cùng trải nghiệm với thú vị nào</span>
+                </div>
+            </div>
+            <div class="container__icon">
+                <img class="container__icon-traidat" src="./essets/images/traidat.png" alt="Trai đất">
+                <img class="container__icon-rocket" src="./essets/images/rọcket.png" alt="Trai đất">
+                <img class="container__icon-men" src="./essets/images/men.png" alt="Trai đất">
+            </div>
+        </div>
+        <div id="Main_form" class="container__form container-fluid">
+           <div class="row">
+                <div class="col-lg-3 col-md-2 hide-on-mobile"></div>
+
+                <div class="col-lg-6 col-md-8 col-sm-12 col-12 container__main">
+                    <div class="container__main-control">
+                        <!-- Nếu check thì thêm class  container__main-control-btn-check  -->
+                        <button style="outline: none;" class="container__main-control-btn container__main-control-btn-check">
+                            <i class="fas fa-plane"></i>
+                            VÉ MÁY BAY
+                        </button>
+                        <button  style="outline: none;" class="container__main-control-btn">
+                            <i class="fas fa-car"></i>
+                            KHÁCH SẠN
+                        </button>
+                    </div>
+                    <div class="container__main-group-controll">
+                        <div class="container__main-group-controll-flights">
+                            <!-- Nếu chọn thì thêm class: flights-check -->
+                            <label id="btnNoiDia"  for="customRadio" style="outline: none;" class="button1 flights-check">Nội địa</label>
+                            <label id="btnQuocTe"  for="customRadio2"  style="outline: none;" class="button1">Quốc tế</label>
+                        </div>
+                        <div class="container__main-group-controll-roundtrip">
+                              <div id="MotChieu" class="custom-control custom-radio" style="margin-right: 30px;">
+                                <input type="radio" class="custom-control-input" id="customRadio" checked name="example1" value="customEx">
+                                <label class="custom-control-label" for="customRadio">Một chiều</label>
+                              </div>
+                              <div  id="KhuHoi" class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customRadio2" name="example1" value="customEx">
+                                <label class="custom-control-label" for="customRadio2">Khứ hồi</label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="container__main-selectFlight">
+                        <div class="container__main-selectFlight-diemdi">
+                            <div class="container__main-selectFlight-diemdi-title">
+                                <i class="fas fa-plane-departure margin-right"></i>
+                                Điểm đi
+                            </div>
+                            <div class="container__main-selectFlight-diemdi-text">
+                                <select name="diemdi" id="" class="container__main-selectFlight-diemdi-select">
+                                    <option value="" >Chọn nơi đi</option>
+                                    <option value="HANOI">Hà Nội</option>
+                                    <option value="SGN">TP HCM</option>
+                                    <option value="PQC">Phú Quốc</option>
+                                    <option value="DLI" >Đà Lạt</option>
+                                </select>
+                            </div>
+                            
+
+                        </div>
+                        <div class="container__main-selectFlight-diemdi">
+                            <div class="container__main-selectFlight-diemdi-title">
+                                <i class="fas fa-plane-arrival margin-right"></i>
+                                Điểm đến
+                            </div>
+                            <div class="container__main-selectFlight-diemdi-text">
+                                <select name="diemden" id="" class="container__main-selectFlight-diemdi-select">
+                                    <option value="" >Chọn nơi đến</option>
+                                    <option value="HANOI">Hà Nội</option>
+                                    <option value="SGN">TP HCM</option>
+                                    <option value="PQC">Phú Quốc</option>
+                                    <option value="DLI" >Đà Lạt</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__main-time">
+                        <div class="container__main-time-ngaydi"> 
+                            <span class="container__main-time-ngaydi-text">
+                                Ngày đi
+                            </span>
+                           
+                            <div class="container__main-time-ngaydi-lich">
+                                <input class="container__main-time-ngaydi-input" type="date" name="date" id="iputDate">
+                                <i class="far fa-calendar-alt"></i>
+                              
+                            </div>
+                        </div>
+                        
+                        <div class="container__main-time-ngayve"> 
+                            <span class="container__main-time-ngayve-text">
+                                Ngày về
+                            </span>
+                            <div style="display: none;" id="NgayVe" class="container__main-time-ngaydi-lich">
+                                <input class="container__main-time-ngaydi-input" type="date" name="date" id="iputDate">
+                                <i class="far fa-calendar-alt"></i>
+                              
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container__main-colItemSelect">
+                        <div class="container__main-colItemSelect-Adults">
+                            <i class="fas fa-user"></i>
+                            <span class="colItemSelect-Adults-text">
+                                Người lớn
+                            </span>
+                            <input type="number" name="SlAdults" min="0" max="100" step="1" value="3">
+                        </div>
+                        <div class="container__main-colItemSelect-children">
+                            <i class="fas fa-child"></i>
+                            <span class="colItemSelect-Adults-text">
+                                  Trẻ em 
+                                <div class="colItemSelect-Adults-text-info">
+                                    (2 -12 tuổi)
+                                </div>
+                            </span>
+                            <input type="number" name="SlChildren" min="0" max="100" step="1" value="3">
+                        </div>
+                        <div class="container__main-colItemSelect-baby">
+                            <i class="fas fa-baby"></i>
+                            <span class="colItemSelect-Adults-text">
+                                Em bé
+                                <div class="colItemSelect-Adults-text-info">
+                                    (< 2 tuổi)
+                                </div>
+                            </span>
+                            <input type="number" name="SlBaby" min="0" max="100" step="1" value="3">
+                        </div>
+                    </div>
+                    <div class="container__main-carrier">
+                        <div class="container__main-carrier-1">
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                <label class="custom-control-label" for="customCheck">
+                                 <img src="https://vendor.gotadi.com/content/images/jetstar_logo-897848bc9d.svg" alt="jetstar">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="container__main-carrier-2">
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <img src="https://vendor.gotadi.com/content/images/vietjet-4ead77cfeb.svg" alt="VietJet">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="container__main-carrier-3">
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3" name="example1">
+                                <label class="custom-control-label" for="customCheck3">
+                                    <img src="https://vendor.gotadi.com/content/images/VN-b907117ac7.png" alt="VN">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="container__main-carrier-4">
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4" name="example1">
+                                <label class="custom-control-label" for="customCheck4">
+                                    <img src="https://vendor.gotadi.com/content/images/QH-34ee27f96b.gif" alt="QH">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__login">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                            Tìm Chuyến Bay
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-3 col-md-2 hide-on-mobile"></div>
+           </div>
+        </div>
+        <footer class="footer">
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
+
+

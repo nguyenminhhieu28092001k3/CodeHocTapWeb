@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+            $('div').click(function () { 
+                $("div").animate(
+                    { left: '250px',
+                    opacity: '0.5', 
+                    height: '150px',
+                    width: '150px',
+                    top: '100px'
+                    },5000);
+                
+            });
+
+            //lệnh top animation: $("#div").stop(); 
+
+        });
+    </script>
+</head>
+<body>
+    <div style="position: relative;">Hello World</div>
+    
+</body>
+</html>

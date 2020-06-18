@@ -1,0 +1,28 @@
+:root{
+    --logo-png: calc(800px/2);
+    --size-promotion: calc(36px/2);
+    --header:145px;
+    --promotion: 28px;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 65.5%;
+    line-height: 1.6rem;
+    /* sans-serif : ko có gạch chân */
+    font-family: 'Roboto',sans-serif ;
+    box-sizing: border-box;
+}
+.icon_tiki{
+    width: var(--size-promotion);
+    height: var(--size-promotion);
+    display: inline-block;
+    background-size: var(--logo-png);
+}
+.img__small{
+    width:205px;
+}
+.img__nomal{
+    width: calc(584px/2);
+}

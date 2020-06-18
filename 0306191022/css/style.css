@@ -1,0 +1,88 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    height: 335px;
+   background-image: url(../img/header_bg.jpg);
+}
+#imgLogo{
+    padding: 10px;
+}
+#mainMenu{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+#mainMenu li{
+    border: 1px solid;
+    height: auto;
+    width: 225px;
+    text-align: center;
+}
+.home:hover{
+    background-color: green;
+}
+.gioithieu:hover{
+    background-color: blue;
+}
+.tintuc:hover{
+    background-color: pink;
+}
+.Km:hover{
+    background-color: orange;
+}
+.Login:hover{
+    background-color: purple;
+}
+
+.title{
+    text-align: center;  
+}
+.infornation{
+    text-align: center;
+}
+.input{
+    margin-left: 50px;
+}
+.img{
+    height: 200px;
+    width: 200px;
+    margin: 20px 0 0 0;
+}
+
+ /* trang about */
+.container{
+ height: 100px;
+ width: 100vw;
+ margin-top: 50px;
+}
+.name{
+ text-align: center;
+font-size: 96px;
+}
+.mssv{
+  text-align: center;
+  font-size: 96px;
+
+}
+
+/* login */
+.tieude{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form_name{
+    width: 150px;
+}
+.Gmail{
+    height: 20px;
+    width: 100px;
+    height: 23px;
+    width: 106px;
+    margin-left: 20px;
+    border: 1px solid black;
+}

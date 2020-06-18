@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài đặt Jquery</title>
+
+    <!-- Link file Jquery của Microsoft-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+    <button id="btn1">Click Me</button>
+ 
+    <script>
+        function Alert(){
+            alert("hello");
+        }
+
+        // dùng Jquery
+        jQuery('#btn1').click(Alert);
+
+        // Dùng js thuần    
+       // document.getElementById('btn1').addEventListener("click",Alert);
+    </script>
+</body>
+</html>

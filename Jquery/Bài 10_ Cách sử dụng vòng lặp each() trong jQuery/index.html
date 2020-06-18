@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách sử dụng vòng lặp each() trong jQuery</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            var result ='';
+            $('li').each(function(index,element){
+                result += "index:" + index + " elemnet:" +$(element).text() +"<br>";
+            });
+
+            $('#result').html(result);
+
+
+
+
+            $('li').slideUp(1000);
+            $('li').css('color','blue');
+            $('li').slideDown(1000);
+        });
+
+       
+
+    </script>
+
+</head>
+<body>
+    <ul id="list">
+        <li>Html</li>
+        <li>Java</li>
+        <li>Php</li>
+        <li>C++</li>
+        <li>Phython</li>
+    </ul>
+    <span id="result"></span>
+</body>
+</html>

@@ -1,0 +1,369 @@
+
+/* Phần ready */
+.container__full {
+   width: 100vw;
+   height: 80vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: url(../images/VuTru1.png);
+   cursor: url(../images/cursor.png), auto !important; 
+}
+
+.container__ready {
+ display: flex;
+  width: 100%;
+  height:100%;
+}
+
+.container__ready-text {
+    margin: auto;
+    cursor: pointer;
+}
+
+.container__ready-text-title {
+   color: #f0e570;
+   font-size: 4rem;
+   font-family:Tahoma,Sans-Serif;
+   text-shadow: 8px 8px 3px #f0e57023;
+   font-family: 'Piedra', cursive;
+   line-height: 3rem;
+}
+.container__ready-text-title:hover{
+    color: #f0e5705b;
+    cursor: url(../images/cursor_ThiaXien3.png), auto !important;
+    text-shadow: 0px 0px 5px #f0e57060;
+}
+.container__ready-text >span{
+    font-size: 2rem;
+    margin-left: -20px;
+    font-family: 'Caveat', cursive;
+    color: #f0e570;
+}
+
+.container__icon {
+ position: relative;
+ top: -80vh;
+}
+
+.container__icon-traidat {
+    height: 100px;
+    position: absolute;
+    top: 40px;
+    left: 20%;
+    animation: cricle 10s infinite;
+}
+
+.container__icon-rocket {
+    position: absolute;
+    bottom: -440px;
+    left: 10%;
+    animation: leaner 100s infinite;
+}
+
+.container__icon-men {
+  height: 120px;
+  position: absolute;
+  bottom: -420px;
+  right: 10%;
+  transform: rotate(150deg);
+  animation: messy 150s infinite;
+
+}
+
+/* Phần sử lý, form */
+.container__form{
+    /* display: none; */
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-image: url(../images/Form_ban_ve_may_bay.png);
+}
+.container__main{
+    padding: 20px;
+    border: 1px solid var(--white-color);
+    background-color: rgba(245, 251, 252, 0.466);
+}
+.container__main-control {
+    display: flex;
+    justify-content: space-between;
+
+}
+.container__main-control-btn { 
+    border-radius: 10px;
+    padding: 5px 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: var(--back-color);
+    font-size: 1.6rem;
+
+}
+.container__main-control-btn-check{
+    background-color: rgb(24,158,255);
+    color: var(--white-color);
+}
+.container__main-control-btn:hover{
+    background-color: rgb(24,158,255);
+    color: var(--white-color);
+}
+
+.container__main-group-controll {
+    margin: 8px 0 20px 0;
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+}
+.container__main-group-controll-flights {
+
+}
+.button1{
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    color: var(--black-color);
+    padding: .5rem 2rem;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    background-color: var(--white-color);
+}
+
+.flights-check{
+    background-color: rgb(255,242,0);
+}
+.container__main-group-controll-roundtrip {
+    display: flex;
+    align-items: center;
+}
+.custom-control-input:checked ~.custom-control-label{
+    color: blue;
+}
+.custom-control-label{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+/* Css lại nút checkbox */
+.custom-control-label::before {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.custom-control-label::after {
+    top: 0.38rem;
+    left: -1.24rem; 
+}
+.custom-control-label{
+    cursor: pointer;
+}
+.container__main-selectFlight {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--white-color);
+    
+}
+
+.container__main-selectFlight-diemdi {
+
+}
+
+.container__main-selectFlight-diemdi-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+.container__main-selectFlight-diemdi-text {
+    font-size: 1.6rem;
+    color: #ADB8BC;
+    font-weight: 800;
+    cursor: pointer;
+}
+.margin-right{
+    margin-right: 10px;
+}
+
+/*  */
+.container__main-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__main-time-ngaydi {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    padding: 15px 0;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__main-time-ngaydi-text {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+.container__main-selectFlight-diemdi-select{
+    background-color: #73838D;
+    border:none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    cursor: pointer;
+}
+.container__main-selectFlight-diemdi-select option{
+    background-color: var(--white-color);
+    
+}
+
+.container__main-time-ngaydi-lich {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.container__main-time-ngaydi-lich i{
+    position: relative;
+    top: 3px;
+    left: -36px;
+}
+.container__main-time-ngaydi-input{
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 8px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.container__main-time-ngaydi-lich h5{
+    align-items: center;
+    font-size: 1.7rem;
+    padding:0 10px;
+}
+
+.container__main-time-ngayve {
+    width: 50%;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__main-time-ngayve-text {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 3rem;;
+}
+/* phần chọn sô lượng ng */
+
+.container__main-colItemSelect {
+    display: flex;
+    cursor: default;
+    border-top: 1px solid var(--white-color);
+}
+
+.container__main-colItemSelect-Adults {
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+}
+.container__main-colItemSelect-Adults input{
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+}
+.container__main-colItemSelect-Adults i{
+    font-size: 1.8rem;
+}
+
+.colItemSelect-Adults-text {
+    font-size: 1.2rem;
+}
+
+.container__main-colItemSelect-children {
+    flex:1;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: 1px solid var(--white-color);
+    border-right: 1px solid var(--white-color);
+}
+.container__main-colItemSelect-children input{
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+}
+.container__main-colItemSelect-children i{
+    font-size: 1.8rem;
+}
+
+.colItemSelect-Adults-text-info {
+    font-size: .8rem;
+    color:rgb(58, 60, 61);
+}
+
+.container__main-colItemSelect-baby {
+    flex:1;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container__main-colItemSelect-baby input{
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+}
+.container__main-colItemSelect-baby i{
+    font-size: 1.8rem;
+}
+/* Phần chọn hãng máy bay */
+.container__main-carrier {
+    display: flex;
+    border-top: 1px solid white;
+    padding-top: 15px;
+    justify-content: space-evenly;
+}
+
+.container__main-carrier-1 {
+
+}
+
+.container__main-carrier-2 {
+
+}
+
+.container__main-carrier-3 {
+
+}
+
+.container__main-carrier-4 {
+
+}
+.custom-control-label img{
+    height:18px;
+}
+
+.container__login{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.btn{
+    height: 40px;
+    font-size: 1.4rem;
+}
+
+/*  */

@@ -1,0 +1,23 @@
+.header{
+    margin-bottom: 20xp;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999
+}
+.header_form{
+    width: 300px;
+    margin: 0 20px;
+}
+.header__logo{
+    display: flex;
+}
+.header__search{
+    display: flex;
+}
+.navbar{
+    justify-content: space-between;
+}
+
+

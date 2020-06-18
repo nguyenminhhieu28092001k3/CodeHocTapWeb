@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+        #txtNumber{
+            width: 200px;
+            height: 20px;
+            background-color: beige;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+            function KtraSNT(munber){
+              var dem=0;
+              for( var i = 2 ;  i < munber ; i++ ){
+                    if(munber % i== 0){
+                        dem++;
+                    }
+               }
+               if(dem==0) return true;
+               return false;
+            }
+
+            function KienTra(){
+                var munber = document.getElementById("txtNumber").value;
+                if(munber <0  ){
+                    alert("Lỗi: Mày ngu à, Nhập số nguyên dương")
+                }
+                else{
+                    if(KtraSNT(munber)){
+                        alert("Số nguyên tố");
+                    }
+                    else{
+                        alert("Không phải số nguyên tố");
+                    }
+                }
+            }
+
+    </script>
+</head>
+<body>
+     Nhập Số: 
+     <input type="text" id="txtNumber" placeholder="Nhập một số nguyên dương"> <br/>
+
+     <button onclick="KienTra();" type="submit">Kiển tra số nguyên tố</button>
+</body>
+</html>
+
+
+<!-- . Thiết kế 1 trang web gồm 1 textbox cho phép người dùng nhập vào 1 số nguyên dương.
+     Yêu cầu: Nếu người dùng không nhập đúng số nguyên dương thì thông báo lỗi, 
+     ngược lại kiểm tra xem số đó có phải là số nguyên tố không. -->

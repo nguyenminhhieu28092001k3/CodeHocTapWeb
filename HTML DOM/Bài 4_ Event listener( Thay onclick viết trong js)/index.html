@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <button id="ondblclick_ID">123 ondblclick</button>
+    <button id="onclick_ID"> 123 onclick</button>
+
+
+
+
+    <script>
+        var tamp_onclick = document.getElementById("onclick_ID");
+        // Cách 1: gọi click: Cách này chỉ gọi dc 1 hàm
+        // tamp_onclick.onclick = Ham_onclick;
+
+        //Cách 2:gọi click: Cách này  gọi dc nhiều hàm (Lưu ý: Trong nào ko gọi on...click)
+
+        tamp_onclick.addEventListener("click",Ham_onclick);
+        tamp_onclick.addEventListener("click",Ham_ondblclick);
+
+        
+        
+        
+        function Ham_onclick(){
+            console.log("Add item Ham_onclick");
+        }
+        function Ham_ondblclick(){
+            console.log("Add item Ham_ondblclick");
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Qua Ví dụ Mảng</title>
+   
+    <style>
+        body{
+            color: white;
+              
+        }
+        /* *{
+                cursor: url(./cursor.png), auto !important;
+        }  */
+        .container{
+            display: flex;
+            margin-top: 100px;
+        }
+        .container__list{
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            padding:0  20px;
+        }
+        .container__list-item{
+            padding: 0 5px ;
+        }
+        /* Phần danh sách */
+        .header_list{
+            display: flex;
+            width: 400px;
+            background-color: blueviolet;
+            
+            margin-top: 100px;
+        }
+        .header_list-STT {
+            width: 100px;
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid rgba(185, 175, 175, 0.911);
+        }
+        .header_list-name {
+             width: 300px;
+             color: white;
+             line-height: 40px;
+             text-align: center;
+             border: 1px solid rgba(185, 175, 175, 0.911);
+        }
+        .list{
+            
+            width: 400px;
+            background-color: rgba(215, 238, 230, 0.336);
+        }
+        
+       
+        
+    </style>
+</head>
+<body onload=" XuatMang();" background="../../SHOOPEE/essets/images/nhapsanpham.jpg">
+    <div class="container">
+        <span class="container__text">Nhập họ tên sinh viên: </span>
+        <input type="text" class="container__input">
+        <ul class="container__list">
+            <li class="container__list-item">
+                 <button id="add" > Thêm</button>
+            </li>
+            <li class="container__list-item">
+                 <button onclick="Sua();">Sửa</button> 
+            </li>
+            <li class="container__list-item">
+                <button onclick="Xoa();">Xóa</button> 
+            </li>
+            <li class="container__list-item">
+                <button onclick="TimKiem();">Tìm kiếm</button>
+            </li>
+        </ul>
+        <input type="checkbox" onchange="Sort();" class="container__input">
+        <span class="container__text">Tự động sắp xếp danh sách</span>
+    </div>
+
+    <!-- Phần danh sách -->
+    <div class="header_list">
+        <div class="header_list-STT" >STT</div>
+        <div class="header_list-name">Họ Tên</div>
+    </div>
+    <div class="list"  id="ol_list">     
+    </div>
+    
+    <!-- Phần script -->
+     <script src="./main.js"></script>
+</body>
+</html>

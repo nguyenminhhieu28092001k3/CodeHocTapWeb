@@ -1,0 +1,62 @@
+:root{
+    --white-color: #fff;
+    --black-color: black;
+    --text-color: #333;
+    --red-color:red;
+    --primary-color:#EE4d2D;
+    --border-color:#dbdbdb;
+}
+*{
+    /* cursor: url(../images/cursor.png), auto !important; */
+} 
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 65.5%;
+    line-height: 1.6rem;
+    /* sans-serif : ko có gạch chân */
+    font-family: 'Roboto',sans-serif ;
+    box-sizing: border-box;
+}
+@keyframes cricle{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes leaner{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(400px,-400px);   
+    }
+  
+}
+@keyframes messy{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(-100px,-100px);   
+    }
+    50%{
+        transform: translate(-100px,100px);   
+    }
+    50%{
+        transform: translate(-100px,100px);   
+    }
+    75%{
+        transform: translate(-100px,-100px);   
+    }
+    80%{
+        transform: translate(-100px,100px);   
+    }
+    100%{
+        transform: translate(-100px,100px);   
+    }
+  
+}

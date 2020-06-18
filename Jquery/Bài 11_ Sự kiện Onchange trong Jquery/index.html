@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 11_ Sự kiện Onchange trong Jquery</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script>
+         var a=1;
+       $(document).ready(function () {
+           $('#selTinh').change(function () { 
+              $('#result').html($(this).val());
+           });
+           
+            
+          
+       });
+
+    </script>
+
+</head>
+<body >
+  
+    <select name="Tinh" id="selTinh">
+        <option value="TPHCM">TP HCM</option>
+        <option value="KG">Kiêng Giang</option>
+        <option value="HN">Hà nội</option>
+    </select>
+    <span id="result"></span>
+
+</body>
+</html>

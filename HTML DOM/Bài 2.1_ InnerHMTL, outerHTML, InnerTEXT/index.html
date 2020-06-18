@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2.1_ InnerHMTL, outerHTML, InnerTEXT</title>
+</head>
+<body>
+    
+    <span id="box">
+        <h1 >Hello</h1>
+    </span>
+  <script>
+      var a = document.getElementById('box');
+      console.log(a.innerText);  // chi lấy text 
+      console.log(a.innerHTML);  // lấy cả html
+      console.log(a.outerHTML);  // lấy cả thẻ bên ngoài 
+
+      // nếu ngán cũng vậy
+  </script>
+    
+ <!--     /**    InnerHMTL
+         *   Lấy: cả element và text
+         *   thêm: cả element và text
+         * /
+        
+        /**   InnerTEXT
+         *   Lấy:  text
+         *  thêm:  text
+         * / 
+         
+         /**   outerHTML
+          *    lấy: Cả thẻ bao bên ngoài 
+          *    thêm: thay thế cả thẻ bên ngoài
+          * /
+   -->
+</body>
+</html>

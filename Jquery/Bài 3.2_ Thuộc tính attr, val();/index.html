@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3.2_ Thuộc tính attr</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+             $('#hello').attr('title','Đây là h1: Có text là hello');
+            // Js thuần  
+           // document.getElementById('hello').setAttribute('title','Đây là h1: ');
+       
+           $('#txtInput').val(123);
+           //document.getElementById('txtInput').value = 123;
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="hello" >hello</h1>
+        <input id="txtInput" type="text">
+    </div>
+
+</body>
+</html>

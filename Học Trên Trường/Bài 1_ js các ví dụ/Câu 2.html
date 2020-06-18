@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <script>
+        function Hover(){
+            document.getElementById('txtPassWord').setAttribute( "type","text");
+        }
+        function unHover(){
+            document.getElementById('txtPassWord').setAttribute( "type","password");
+        }
+        function KienTraUser(){
+            var name = document.getElementById("txtTaiKhoan").value;
+            var pass = document.getElementById("txtPassWord").value;
+            if(name == "admin" && pass == "123456"){
+                alert("hello ông chủ :" + name);
+            }else{
+                 alert("Cút");
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>Tài khoản: </td>
+            <td><input type="text" id="txtTaiKhoan" name="User" value="admin"></td>
+        </tr>
+        <tr>
+            <td>Mật khẩu : </td>
+            <td><input onmouseover="Hover();" onmouseout="unHover();" type="password" id="txtPassWord" name="PassWord" value="123456"></td>
+        </tr>
+        <tr>
+            <td><button onclick="KienTraUser()" type="submit">Xác Nhận</button></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
+
+
+<!-- 2. Thiết kế 1 trang web gồm 2 textbox để nhập tên tài khoản,
+     mật khẩu và 1 button Đăng nhập. 
+     Yêu cầu:  Khi di chuyển chuột lên textbox Mật khẩu thì hiển thị mật khẩu ở dạng plain text,
+      khi di chuyển chuột ra khỏi textbox Mật khẩu thì hiển thị 
+      mật khẩu ở dạng password như bình thường.
+        Sau khi nhập thông tin và nhấn nút Đăng nhập, kiểm tra nếu tên tài khoản là admin
+        và mật khẩu là 123456 thì thông báo "Đăng nhập thành công", 
+    ngược lại thông báo "Đăng nhập thất bại".  -->

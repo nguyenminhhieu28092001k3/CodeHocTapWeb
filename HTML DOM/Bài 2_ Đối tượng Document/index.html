@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đối tượng Document</title>
+    <script>
+        console.log(document);
+    </script>
+</head>
+<body>
+    <h1 id="123">Một</h1>
+    <h1 class="ABC"> Hai</h1>
+    <h1 class="ABC"> Ba</h1>
+
+    
+    <script>
+     //Lấy các thành phần theo id của thẻ HTML..
+     document.getElementById("123").innerHTML = "HELLO";
+    //  Lấy phần tử theo thuộc tính class. CHÚ Ý: [munber] là số class đó
+    document.getElementsByClassName('ABC')[1].innerHTML = "Xin chao";	
+
+    // Lấy phần tử theo tên, chính là thuộc tính name trong thẻ.
+    getElementsByName(tagname)
+    // Lấy phần tử theo tên thẻ HTML.
+    getElementsByTagName(name)	
+    document.getElementById().innerText;
+
+    //Lấy theo select  1 cái 
+    document.querySelector(".header");
+    //Lấy theo select CSS -->lấy hết
+    document.querySelectorAll(".header");
+
+
+
+    </script>
+    
+</body>
+</html>
+
+<!-- element.setAttribute(attribute, value)  : Thay đổi giá trị thuộc tính của một phần tử HTML -->
+<!-- element.attribute = new value           : Thay đổi giá trị thuộc tính của một phần tử HTML -->
+<!-- element.style.property = new style      : Thay đổi định dạng của một phần tử HTML -->
+
+<!-- Thêm và xóa phần tử HTML
+   Phương thức	                            Mô tả
+document.createElement(element)	Tạo một phần tử HTML
+document.removeChild(element)	Bỏ một phần tử HTML
+document.appendChild(element)	Thêm một phần tử HTML
+document.replaceChild(element)	Thay thế một phần tử HTML
+document.write(text)	Viết vào luồng đầu ra HTML -->
+
+
+<!-- Thêm bộ quản lý sự kiện
+Phương thức	Mô tả
+document.getElementById(id).onclick = function(){code}	Thêm mã trình xử lý sự kiện vào sự kiện onclick -->
