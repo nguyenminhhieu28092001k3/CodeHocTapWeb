@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Buổi 12 - Bài 3</title>
+</head>
+
+<body>
+    <div class="header ">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" style="width: 40px;">
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Sản phẩm
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Apple</a>
+                        <a class="dropdown-item" href="#">Samsung</a>
+                        <a class="dropdown-item" href="#">HTC</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Tài khoản
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="container" style="width: 280px;">
+                            <form method="POST">
+                                <div class="form-group">
+                                    <label for="txtTenTK">Tên tài khoản:</label>
+                                    <input type="text" class="form-control" id="txtTenTK">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtMK">Mật khẩu:</label>
+                                    <input type="password" class="form-control" id="txtMK">
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="chkGhiNho" checked>
+                                    <label class="custom-control-label" for="chkGhiNho">Ghi nhớ tài khoản</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary mr-2">Đăng nhập</button><a href="#">Quên
+                                    mật
+                                    khẩu?</a>
+                                <div class="dropdown-divider"></div>
+                                Chưa có tài khoản? <a href="#">Đăng kí ngay</a>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-success mr-2"><i class="fas fa-shopping-cart"></i> 2</a>
+            <form class="form-inline" method="GET">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Nhập từ khóa tìm kiếm">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                            Tìm
+                            kiếm</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+        
+    </div>
+
+
+    <div class="container-fluid" style="margin-top: 68px;" >
+      <div class="row">
+        <div class="col-md-8">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/slide0.png" style="width: 100%;" alt="Los Angeles">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/slide1.png" style="width: 100%;"  alt="Chicago">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/slide2.png" style="width: 100%;"  alt="New York">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/slide3.png" style="width: 100%;"  alt="Chicago">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/slide4.png" style="width: 100%;"  alt="New York">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex flex-column " style="margin-top: 20px;">
+                <img class="img-fluid " src="./img/ads0.png" alt="">
+                <img class="img-fluid" src="./img/ads1.png" alt="" style="margin-top: 20px;">
+            </div>  
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+          <div class="col">
+              <nav aria-label="Page breadcrumb">
+                  <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">Trang chủ</li>
+                      <li class="breadcrumb-item">Điện thoại</li>
+                      <li class="breadcrumb-item">Iphone(Apple)</li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+            <div class="container__title">
+                <h4 class="mr-2">Điện thoại Iphone 11 Pro Max (64GB)</h4>
+                <span class="text-warning" style="display: flex;align-items: center;">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half" aria-hidden="true"></i>
+                </span>
+                <a href="" style="display: flex;align-items: center;">12 Đánh giá</a>
+            </div>
+          </div>
+      </div>
+      <div class="dropdown-divider mb-3"></div>
+      <div class="row">
+          <div class="col-md-4">
+              <img class="img-fluid" src="./img/iphone-11-pro-max-black-400x460.png" alt="">
+          </div>
+          <div class="col-md-5">
+                <span class="h3 font-weight-bold text-danger mr-3">32.390.000₫</span>
+                <del class="h5 text-secondary mr-3">33.999.000₫</del>
+                <span class="badge badge-warning text-white mb-2">Trả góp 0%</span>
+                <h5 class="font-weight-bold">Thông số kỹ thuật</h5>
+                <table class="table" id="tblSpecs">
+                    <tbody>
+                        <tr>
+                            <td>Màn hình:</td>
+                            <td>OLED, 6.5", Super Retina XDR</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành:</td>
+                            <td>iOS 13</td>
+                        </tr>
+                        <tr>
+                            <td>Camera sau:</td>
+                            <td>3 camera 12 MP</td>
+                        </tr>
+                        <tr>
+                            <td>Camera trước:</td>
+                            <td>12 MP</td>
+                        </tr>
+                        <tr>
+                            <td>CPU:</td>
+                            <td>Apple A13 Bionic 6 nhân</td>
+                        </tr>
+                        <tr>
+                            <td>RAM:</td>
+                            <td>4 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Bộ nhớ trong:</td>
+                            <td>64 / 128 / 256 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Thẻ SIM:</td>
+                            <td>1 eSIM &amp; 1 Nano SIM, Hỗ trợ 4G</td>
+                        </tr>
+                        <tr>
+                            <td>Dung lượng pin:</td>
+                            <td>3969 mAh, có sạc nhanh</td>
+                        </tr>
+                    </tbody>
+                </table>
+           
+          </div>
+          <div class="col-md-3">
+           
+                <!-- Info -->
+                <a href="#">
+                    <i class="fa fa-location-arrow text-primary" aria-hidden="true"></i> Tìm cửa hàng gần nhất còn hàng
+                </a>
+                <div class="container border rounded my-2 p-3">
+                    <i class="fas fa-box-open"></i> Bộ sản phẩm gồm: Sạc, Tai nghe, Hộp, Cáp, Cây lấy SIM, Sách hướng
+                    dẫn
+                    <div class="dropdown-divider"></div>
+                    <i class="fas fa-award"></i> Bảo hành chính hãng 12 tháng.
+                    <div class="dropdown-divider"></div>
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> Lỗi là đổi mới trong 1 tháng tại hơn 2026 siêu
+                    thị toàn quốc
+                </div>
+                <!-- Purchase button -->
+                <button type="button" class="btn btn-success text-white btn-lg btn-block mb-2">
+                    <span class="h5 font-weight-bold">MUA NGAY</span><br>
+                    <span class="h6">Giao tận nơi / Nhận tại siêu thị</span>
+                </button>
+                <button type="button" class="btn btn-primary text-white btn-lg btn-block mb-2">
+                    <span class="h5 font-weight-bold">MUA TRẢ GÓP 0%</span><br>
+                    <span class="h6">Thủ tục đơn giản</span>
+                </button>
+                <button type="button" class="btn btn-primary text-white btn-lg btn-block mb-2">
+                    <span class="h5 font-weight-bold">TRẢ GÓP 0% QUA THẺ</span><br>
+                    <span class="h6">VISA, MasterCard, JCB</span>
+                </button>
+            </div>
+          
+      </div>
+
+    </div>
+
+    
+   
+</body>
+
+</html>
+
