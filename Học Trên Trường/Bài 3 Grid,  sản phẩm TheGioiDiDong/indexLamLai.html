@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <title>Thế Giới Di Động Làm Lại</title>
+    <link rel="short icon" href="./img/favicon.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="background-color: #343a40!important;" >
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="Logo" style="height: 38px;">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: rgba(255,255,255,.5);">Trang Chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" 
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: rgba(255,255,255,.5);">Sản Phẩm</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Apple</a>
+                        <a class="dropdown-item" href="#">SamSung</a>
+                        <a class="dropdown-item" href="#">HTC</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: rgba(255,255,255,.5);">Liên Hệ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" 
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: rgba(255,255,255,.5);">Tài Khoản</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId"  style="  width: 300px; padding: 10px 20px;">
+                          <form action="" method="get">
+                                <div class="form-group">
+                                    <label for="my-input">Tên Tài Khoản</label>
+                                    <input id="my-input" class="form-control" type="text" name="user">
+                                </div>
+                                <div class="form-group">
+                                    <label for="my-input">Mật Khẩu</label>
+                                    <input id="my-input" class="form-control" type="text" name="Pass">
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="CheckID" class="custom-control-input" type="checkbox" name="Check" value="true">
+                                    <label for="CheckID" class="custom-control-label">Ghi nhớ mật khẩu</label>
+                                </div>
+                                <div class="container__DangKy">
+                                    <button class="btn btn-primary" type="button">Đăng nhập</button>
+                                    <a href="">Quên mật Khẩu</a>
+                                </div>
+                                 <div class="dropdown-divider"></div>
+                                 <span>Chưa có tài khoản <a href="">Đăng ký ngay</a></span>
+                          </form>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn " type="button" style="background-color: #28a745; color: white; margin-right: 5px;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+                    2
+                </button>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search"  >
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style=" color: #fff;background-color: #28a745;border-color: #28a745;">
+                    <i class="fa fa-search" ></i>
+                    Tìm Kiếm
+                </button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="my-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#my-carousel" data-slide-to="0" aria-current="location"></li>
+                <li data-target="#my-carousel" data-slide-to="1"></li>
+                <li data-target="#my-carousel" data-slide-to="2"></li>
+                <li data-target="#my-carousel" data-slide-to="3"></li>
+                <li data-target="#my-carousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/slide0.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/slide1.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/slide2.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/slide3.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/slide4.png" alt="">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#my-carousel" data-slide="prev" role="button">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#my-carousel" data-slide="next" role="button">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Danh sách sản phẩm</h5>
+                <nav class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Hàng mới về</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" >Apple</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" >Samsung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" >HTC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" >OPPO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" >XiAOMI</a>
+                    </li>
+                    <li class="nav-item disabled" style="  background-color: blue; border-radius: 7px;">
+                        <a class="nav-link " style="color: #fff;" href="#" >Sản Phẩm Khác</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3 " style="margin-top: 10px;">
+                          <img src="./img/xiaomi-redmi-note-7-hpbd.jpg" style="width: 100%;" alt="">
+                          <h5 class="cart__Name">Xiaomi Redmi Note 7 (64GB)</h5>
+                          <h5 class="cart__Gia">4.990.000Đ</h5>
+                          <div class="cart__info">
+                            Tặng sạc dự phòng 5000 mAh HOẶC Tặng phiếu mua hàng 10% giá trị sản
+                            phẩm
+                            đang xem và <b>1 Khuyễn Mãi</b> Khác
+                          </div>
+                          <button class="btn btn-primary" type="button" style="margin:10px 0 0 10px;  ">
+                              <i class="fa fa-shopping-cart"></i>
+                              Mua Ngay
+                          </button>
+                    </div>
+                     <div class="col-md-3 " style="margin-top: 10px;">
+                          <img src="./img/xiaomi-redmi-note-7-hpbd.jpg" style="width: 100%;" alt="">
+                          <h5 class="cart__Name">Xiaomi Redmi Note 7 (64GB)</h5>
+                          <h5 class="cart__Gia">4.990.000Đ</h5>
+                          <div class="cart__info">
+                            Tặng sạc dự phòng 5000 mAh HOẶC Tặng phiếu mua hàng 10% giá trị sản
+                            phẩm
+                            đang xem và <b>1 Khuyễn Mãi</b> Khác
+                          </div>
+                          <button class="btn btn-primary" type="button" style="margin:10px 0 0 10px;  ">
+                              <i class="fa fa-shopping-cart"></i>
+                              Mua Ngay
+                          </button>
+                    </div>
+                    <div class="col-md-3 " style="margin-top: 10px;">
+                         <img src="./img/xiaomi-redmi-note-7-hpbd.jpg" style="width: 100%;" alt="">
+                         <h5 class="cart__Name">Xiaomi Redmi Note 7 (64GB)</h5>
+                         <h5 class="cart__Gia">4.990.000Đ</h5>
+                         <div class="cart__info">
+                           Tặng sạc dự phòng 5000 mAh HOẶC Tặng phiếu mua hàng 10% giá trị sản
+                           phẩm
+                           đang xem và <b>1 Khuyễn Mãi</b> Khác
+                         </div>
+                         <button class="btn btn-primary" type="button" style="margin:10px 0 0 10px;  ">
+                             <i class="fa fa-shopping-cart"></i>
+                             Mua Ngay
+                         </button>
+                   </div>
+                   <div class="col-md-3 " style="margin-top: 10px;">
+                        <img src="./img/xiaomi-redmi-note-7-hpbd.jpg" style="width: 100%;" alt="">
+                        <h5 class="cart__Name">Xiaomi Redmi Note 7 (64GB)</h5>
+                        <h5 class="cart__Gia">4.990.000Đ</h5>
+                        <div class="cart__info">
+                          Tặng sạc dự phòng 5000 mAh HOẶC Tặng phiếu mua hàng 10% giá trị sản
+                          phẩm
+                          đang xem và <b>1 Khuyễn Mãi</b> Khác
+                        </div>
+                        <button class="btn btn-primary" type="button" style="margin:10px 0 0 10px;  ">
+                            <i class="fa fa-shopping-cart"></i>
+                            Mua Ngay
+                        </button>
+                  </div>
+                  <div class="col-md-3 " style="margin-top: 10px;">
+                       <img src="./img/xiaomi-redmi-note-7-hpbd.jpg" style="width: 100%;" alt="">
+                       <h5 class="cart__Name">Xiaomi Redmi Note 7 (64GB)</h5>
+                       <h5 class="cart__Gia">4.990.000Đ</h5>
+                       <div class="cart__info">
+                         Tặng sạc dự phòng 5000 mAh HOẶC Tặng phiếu mua hàng 10% giá trị sản
+                         phẩm
+                         đang xem và <b>1 Khuyễn Mãi</b> Khác
+                       </div>
+                       <button class="btn btn-primary" type="button" style="margin:10px 0 0 10px;  ">
+                           <i class="fa fa-shopping-cart"></i>
+                           Mua Ngay
+                       </button>
+                   </div>
+                   <div class="col-md-3 " style="margin-top: 10px;">
+                        <img src="./img/xiaomi-redmi-note-7-hpbd.jpg" style="width: 100%;" alt="">
+                        <h5 class="cart__Name">Xiaomi Redmi Note 7 (64GB)</h5>
+                        <h5 class="cart__Gia">4.990.000Đ</h5>
+                        <div class="cart__info">
+                          Tặng sạc dự phòng 5000 mAh HOẶC Tặng phiếu mua hàng 10% giá trị sản
+                          phẩm
+                          đang xem và <b>1 Khuyễn Mãi</b> Khác
+                        </div>
+                        <button class="btn btn-primary" type="button" style="margin:10px 0 0 10px;  ">
+                            <i class="fa fa-shopping-cart"></i>
+                            Mua Ngay
+                        </button>
+                    </div>
+                    <div class="col-md-3 " style="margin-top: 10px;">
+                         <img src="./img/xiaomi-redmi-note-7-hpbd.jpg" style="width: 100%;" alt="">
+                         <h5 class="cart__Name">Xiaomi Redmi Note 7 (64GB)</h5>
+                         <h5 class="cart__Gia">4.990.000Đ</h5>
+                         <div class="cart__info">
+                           Tặng sạc dự phòng 5000 mAh HOẶC Tặng phiếu mua hàng 10% giá trị sản
+                           phẩm
+                           đang xem và <b>1 Khuyễn Mãi</b> Khác
+                         </div>
+                         <button class="btn btn-primary" type="button" style="margin:10px 0 0 10px;  ">
+                             <i class="fa fa-shopping-cart"></i>
+                             Mua Ngay
+                         </button>
+                     </div>
+                     <div class="col-md-3 " style="margin-top: 10px;">
+                          <img src="./img/xiaomi-redmi-note-7-hpbd.jpg" style="width: 100%;" alt="">
+                          <h5 class="cart__Name">Xiaomi Redmi Note 7 (64GB)</h5>
+                          <h5 class="cart__Gia">4.990.000Đ</h5>
+                          <div class="cart__info">
+                            Tặng sạc dự phòng 5000 mAh HOẶC Tặng phiếu mua hàng 10% giá trị sản
+                            phẩm
+                            đang xem và <b>1 Khuyễn Mãi</b> Khác
+                          </div>
+                          <button class="btn btn-primary" type="button" style="margin:10px 0 0 10px;  ">
+                              <i class="fa fa-shopping-cart"></i>
+                              Mua Ngay
+                          </button>
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.container__DangKy{
+    margin: 10px 0;
+  
+}
+.cart__Name{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.cart__Gia{
+    padding-left: 10px;
+    color: red;
+}
+.cart__info{
+    padding: 0 10px;
+}
+
+
+/* Phần info  */
+.info__icon-star{
+    display: flex;
+    align-self: center;
+    color: yellow;
+    margin: 0 10px;
+}
+.Info__Gia{
+    display: flex;
+}
+.Info__Gia-Sale {
+  font-weight: 700;
+  color: red;
+}
+
+.Info__Gia-thuc {
+    margin-left: 10px;
+ align-self: center;
+ color: #6c757d!important;
+}
+.Info__ThongSo{
+    margin-top: 10px;
+    font-weight: 700;
+}
+.info_ngoai{
+    padding: 20px;
+    margin:20px 0;
+}
